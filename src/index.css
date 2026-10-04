@@ -320,6 +320,166 @@ p {
     margin-bottom: 10px;
 }
 
+.plan-card {
+    text-align: left;
+}
+
+.plan-card h1 {
+    text-align: center;
+}
+
+.overall-progress {
+    margin: 20px 0 24px;
+}
+
+.overall-progress-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 9px;
+    color: #475569;
+    font-size: 0.82rem;
+}
+
+.overall-progress-heading strong {
+    color: #1e1b4b;
+    white-space: nowrap;
+}
+
+.overall-progress .progress-bar {
+    margin-bottom: 0;
+}
+
+.task-list li::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #a5b4fc;
+    background: transparent;
+}
+
+.task-list li.task-done::before,
+.recap-list li::before {
+    content: "✓";
+    border: 0;
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.task-list li > span:first-child {
+    flex: 1;
+}
+
+.task-check {
+    color: #15803d;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.return-summary {
+    display: grid;
+    gap: 5px;
+    padding: 14px 16px;
+    border-left: 3px solid #16a085;
+    background: #f0fdfa;
+    color: #115e59;
+    font-size: 0.88rem;
+    text-align: left;
+}
+
+.return-summary ul {
+    display: grid;
+    gap: 4px;
+    padding-left: 18px;
+    margin-top: 4px;
+}
+
+.recap {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.recap .celebration {
+    display: grid;
+    width: 54px;
+    height: 54px;
+    place-items: center;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.recap h1 {
+    font-size: 1.8rem;
+}
+
+.recap-list {
+    margin: 18px 0;
+}
+
+.recap-note {
+    color: #0f766e;
+    font-weight: 600;
+}
+
+.recommendation-section {
+    margin-top: 28px;
+}
+
+.resource-message {
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #475569;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.resource-message a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #4338ca;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.resource-message a:focus-visible,
+.text-button:focus-visible {
+    outline: 3px solid rgba(99, 102, 241, 0.3);
+    outline-offset: 2px;
+}
+
+.resource-action {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.text-button {
+    padding: 10px 12px;
+    border: 0;
+    background: transparent;
+    color: #475569;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.text-button:hover {
+    color: #312e81;
+}
+
+.reset-button {
+    display: block;
+    margin: 20px auto 0;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
